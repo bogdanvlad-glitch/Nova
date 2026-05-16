@@ -166,6 +166,12 @@ textarea {
   padding: 2rem 0 4rem;
 }
 
+.hero-upgraded {
+  background:
+    radial-gradient(circle at top right, rgba(216, 255, 112, 0.16), transparent 28%),
+    linear-gradient(180deg, rgba(12, 16, 21, 0.06), transparent 38%);
+}
+
 .hero::before {
   content: "";
   position: absolute;
@@ -553,12 +559,275 @@ textarea {
     rgba(255, 255, 255, 0.42);
 }
 
+.contact-cta-strong {
+  background:
+    linear-gradient(180deg, rgba(216, 255, 112, 0.1), transparent 26%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.86), rgba(235, 228, 216, 0.8));
+}
+
 .contact-panel {
   box-shadow: var(--shadow);
 }
 
 .page-intro {
   padding-top: 4rem;
+}
+
+.services-hero {
+  padding: 3rem 0 4rem;
+  color: var(--text-light);
+  background:
+    linear-gradient(180deg, rgba(216, 255, 112, 0.08), transparent 20%),
+    #0f1318;
+}
+
+.services-hero .eyebrow,
+.services-hero p {
+  color: rgba(245, 240, 231, 0.78);
+}
+
+.services-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.services-hero-copy h1 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 6vw, 5.8rem);
+  line-height: 0.92;
+}
+
+.services-hero-board {
+  padding: 1.3rem;
+  border: 1px solid rgba(244, 239, 230, 0.12);
+  border-radius: 30px;
+  background:
+    linear-gradient(180deg, rgba(244, 239, 230, 0.06), rgba(244, 239, 230, 0.02)),
+    rgba(255, 255, 255, 0.02);
+}
+
+.board-topline,
+.service-belt-track span,
+.spectrum-block span,
+.architecture-main span,
+.model-card span,
+.home-service-feature span,
+.home-service-grid span {
+  display: inline-flex;
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  color: rgba(16, 20, 24, 0.56);
+}
+
+.board-topline {
+  margin-bottom: 1rem;
+  color: rgba(245, 240, 231, 0.52);
+}
+
+.board-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.board-grid article {
+  min-height: 12rem;
+  padding: 1.2rem;
+  border-radius: 22px;
+  background: rgba(244, 239, 230, 0.06);
+}
+
+.board-grid strong {
+  display: block;
+  margin: 0.7rem 0 0.6rem;
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  color: var(--text-light);
+}
+
+.board-grid p {
+  margin: 0;
+  color: rgba(245, 240, 231, 0.72);
+}
+
+.service-belt {
+  overflow: clip;
+  padding: 1rem 0;
+  background: #101418;
+}
+
+.service-belt-track {
+  display: flex;
+  gap: 1rem;
+  width: max-content;
+  padding-left: 1rem;
+}
+
+.service-belt-track span {
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(244, 239, 230, 0.12);
+  border-radius: 999px;
+  color: rgba(245, 240, 231, 0.82);
+}
+
+.service-spectrum {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.spectrum-block {
+  padding: 2rem 1.6rem;
+  border-top: 1px solid var(--line);
+}
+
+.spectrum-block h2 {
+  margin: 0.85rem 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
+  line-height: 0.98;
+}
+
+.service-architecture {
+  background:
+    linear-gradient(180deg, rgba(216, 255, 112, 0.05), transparent 24%),
+    #11161c;
+}
+
+.architecture-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.architecture-row {
+  display: grid;
+  grid-template-columns: 70px minmax(0, 1.15fr) minmax(0, 0.7fr);
+  gap: 1.4rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(244, 239, 230, 0.1);
+  border-radius: 28px;
+  background: rgba(244, 239, 230, 0.04);
+}
+
+.architecture-index {
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  color: rgba(245, 240, 231, 0.5);
+}
+
+.architecture-main h2 {
+  margin: 0.7rem 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  line-height: 0.98;
+  color: var(--text-light);
+}
+
+.architecture-main p,
+.architecture-side,
+.architecture-side li {
+  color: rgba(245, 240, 231, 0.76);
+}
+
+.architecture-side {
+  align-self: center;
+}
+
+.architecture-side strong {
+  display: block;
+  margin-bottom: 0.8rem;
+  font-family: var(--font-display);
+  font-size: 0.84rem;
+  text-transform: uppercase;
+}
+
+.architecture-side ul {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.architecture-side li {
+  margin-bottom: 0.65rem;
+  line-height: 1.5;
+}
+
+.models-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.model-card {
+  padding: 1.6rem;
+  border-top: 1px solid rgba(244, 239, 230, 0.14);
+}
+
+.model-card span,
+.home-service-feature span,
+.home-service-grid span {
+  color: rgba(245, 240, 231, 0.56);
+}
+
+.model-card h3,
+.home-service-feature h3 {
+  margin: 0.8rem 0 0.6rem;
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.model-card p {
+  color: rgba(245, 240, 231, 0.76);
+}
+
+.home-services-upgraded {
+  padding-top: 7rem;
+}
+
+.home-service-stage {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+.home-service-feature {
+  padding: 2rem;
+  border-radius: 30px;
+  background:
+    linear-gradient(180deg, rgba(216, 255, 112, 0.1), transparent 55%),
+    rgba(244, 239, 230, 0.05);
+}
+
+.home-service-feature p,
+.home-service-grid p {
+  color: rgba(245, 240, 231, 0.76);
+}
+
+.home-service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.home-service-grid article {
+  min-height: 12rem;
+  padding: 1.4rem;
+  border: 1px solid rgba(244, 239, 230, 0.1);
+  border-radius: 24px;
+  background: rgba(244, 239, 230, 0.04);
+}
+
+.home-service-grid strong {
+  display: block;
+  margin: 0.8rem 0 0.5rem;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  color: var(--text-light);
 }
 
 .page-intro-copy {
@@ -722,6 +991,8 @@ textarea {
   .about-grid,
   .contact-grid,
   .work-panel,
+  .services-hero-grid,
+  .home-service-stage,
   .footer-grid {
     grid-template-columns: 1fr;
   }
@@ -743,8 +1014,19 @@ textarea {
   .case-grid,
   .testimonial-grid,
   .manifest-grid,
-  .metrics-grid {
+  .metrics-grid,
+  .service-spectrum,
+  .models-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .board-grid,
+  .home-service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .architecture-row {
+    grid-template-columns: 1fr;
   }
 
   .main-nav {
@@ -791,7 +1073,11 @@ textarea {
   .testimonial-grid,
   .manifest-grid,
   .metrics-grid,
-  .process-grid {
+  .process-grid,
+  .service-spectrum,
+  .models-grid,
+  .board-grid,
+  .home-service-grid {
     grid-template-columns: 1fr;
   }
 
