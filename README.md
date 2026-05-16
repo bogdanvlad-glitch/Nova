@@ -1,30 +1,21 @@
-# Nova
+# NovaBuild
 
-Site vitrine multi-pages pour une agence premium orientee IA, web, branding et contenu.
+Site statique multi-pages en HTML, CSS et JavaScript.
 
 ## Pages
 
 - `index.html`
+- `solutions.html`
 - `services.html`
-- `realisations.html`
-- `a-propos.html`
 - `contact.html`
 
-## Lancer en local
+## Ouvrir le site
+
+- Soit ouvrir `index.html` dans un navigateur
+- Soit lancer un serveur local depuis le dossier:
 
 ```bash
-python3 -m http.server 4173
+python3 -m http.server 8123
 ```
 
-Puis ouvrir `http://localhost:4173`.
-
-## Structure
-
-- `styles.css` pour le design system et la mise en page
-- `app.js` pour le header/footer communs, les animations d'apparition et le formulaire demo
-- `public/` pour le logo, le favicon et les visuels SVG
-
-## Notes
-
-- Le formulaire de contact est une demo front-end a connecter ensuite a un email, CRM ou outil d'automatisation.
-- Le positionnement et les textes ont ete adaptes a partir des informations disponibles sur l'utilisateur, sans inventer de references clients reelles.
+Puis visiter `http://127.0.0.1:8123`
