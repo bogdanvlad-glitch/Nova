@@ -1,89 +1,144 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Contact Nova: cadrer un projet d’agents IA, de site premium, d’identité visuelle ou de community management."
+      content="Contactez NovaBuild pour un site web, un agent IA, une identité visuelle ou une stratégie de visibilité."
     />
-    <link rel="icon" type="image/svg+xml" href="public/favicon.svg" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Contact | Nova</title>
+    <title>NovaBuild | Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body data-page="contact">
-    <div data-header></div>
-    <main>
-      <section class="page-intro">
-        <div class="container">
-          <div class="eyebrow">Contact</div>
-          <div class="page-intro-grid">
-            <h1>Un premier échange pour cadrer l’image, le système et la vitesse d’exécution.</h1>
-            <div class="page-intro-copy">
-              <p>
-                La page garde un vrai niveau de finition visuelle, mais le
-                formulaire reste volontairement simple pour être branché ensuite
-                vers l’outil de ton choix.
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="index.html" aria-label="NovaBuild accueil">
+          <span class="brand-mark"></span>
+          <span class="brand-text">NovaBuild</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Ouvrir le menu">
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav">
+          <a href="index.html">Accueil</a>
+          <a href="solutions.html">Solutions</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero hero-subpage">
+          <div class="hero-grid contact-grid">
+            <div class="hero-copy reveal">
+              <p class="eyebrow">Parlons du projet</p>
+              <h1>NovaBuild peut transformer votre besoin en dispositif clair et impressionnant.</h1>
+              <p class="hero-text">
+                Décrivez votre entreprise, votre ambition ou ce qui vous manque aujourd’hui.
               </p>
             </div>
+            <div class="contact-card reveal reveal-delay-1">
+              <p class="contact-label">Email</p>
+              <a href="mailto:bogdan.vlad.023@gmail.com">bogdan.vlad.023@gmail.com</a>
+              <p class="contact-label">Téléphone</p>
+              <a href="tel:+32470112745">+32 470 11 27 45</a>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="section section-neutral">
-        <div class="container contact-grid">
-          <form class="contact-form" data-reveal data-demo-form>
-            <label>
-              Nom
-              <input name="name" placeholder="Bogdan Vlad" type="text" />
-            </label>
-            <label>
-              Email
-              <input name="email" placeholder="hello@nova.studio" type="email" />
-            </label>
-            <label>
-              Type de projet
-              <select name="service">
-                <option>Site & branding</option>
-                <option>Agent IA</option>
-                <option>Logo & identité</option>
-                <option>Community management</option>
-                <option>Package complet</option>
-              </select>
-            </label>
-            <label>
-              Besoin
-              <textarea
-                name="brief"
-                placeholder="Je veux une présence premium, un site fort et des systèmes IA qui automatisent une partie de mon business."
-                rows="5"
-              ></textarea>
-            </label>
-            <button class="button button-dark" type="submit">Envoyer la demande</button>
-            <p class="form-note" data-form-note></p>
-          </form>
+        <section class="section">
+          <div class="contact-layout">
+            <form
+              class="contact-form reveal"
+              action="mailto:bogdan.vlad.023@gmail.com"
+              method="post"
+              enctype="text/plain"
+            >
+              <label>
+                Nom
+                <input type="text" name="Nom" placeholder="Votre nom" />
+              </label>
+              <label>
+                Entreprise
+                <input type="text" name="Entreprise" placeholder="Nom de l’entreprise" />
+              </label>
+              <label>
+                Email
+                <input type="email" name="Email" placeholder="vous@entreprise.com" />
+              </label>
+              <label>
+                Type de besoin
+                <select name="Besoin">
+                  <option>Site web premium</option>
+                  <option>Agent IA</option>
+                  <option>Logo / branding</option>
+                  <option>Visibilité digitale</option>
+                  <option>Projet complet</option>
+                </select>
+              </label>
+              <label>
+                Message
+                <textarea
+                  name="Message"
+                  rows="6"
+                  placeholder="Expliquez le contexte, vos objectifs et ce que vous voulez améliorer."
+                ></textarea>
+              </label>
+              <button class="button button-primary" type="submit">Envoyer la demande</button>
+            </form>
 
-          <div class="contact-side">
-            <article class="contact-block" data-reveal>
-              <span>Email studio</span>
-              <h3>hello@nova-agency.dev</h3>
-              <p>Placeholder prêt à être remplacé par ton email réel.</p>
-            </article>
-            <article class="contact-block" data-reveal>
-              <span>Cadence</span>
-              <h3>Europe / Remote</h3>
-              <p>Le positionnement reste compatible avec un ancrage européen haut de gamme.</p>
-            </article>
-            <article class="contact-block" data-reveal>
-              <span>Format</span>
-              <h3>Projet, refonte, système complet</h3>
-              <p>Le site prépare autant la vente d’un livrable unique qu’un accompagnement plus large.</p>
-            </article>
+            <div class="contact-side reveal reveal-delay-1">
+              <div class="contact-note">
+                <p class="eyebrow">Ce que vous pouvez demander</p>
+                <h2>Une page de lancement, un site complet, un agent IA ou une direction globale.</h2>
+                <p>
+                  NovaBuild intervient aussi bien sur un besoin ciblé que sur un
+                  ensemble cohérent: marque, design, build, automatisation et visibilité.
+                </p>
+              </div>
+              <div class="faq-list">
+                <article>
+                  <h3>Vous partez de zéro ?</h3>
+                  <p>NovaBuild peut structurer les pages, le discours et l’interface à partir d’un simple brief.</p>
+                </article>
+                <article>
+                  <h3>Vous avez déjà un site ?</h3>
+                  <p>Le travail peut aussi prendre la forme d’une refonte ciblée, d’un upgrade visuel ou d’un ajout IA.</p>
+                </article>
+                <article>
+                  <h3>Besoin d’aller vite ?</h3>
+                  <p>La production peut être pensée en lots, avec une première mise en ligne rapide puis un enrichissement progressif.</p>
+                </article>
+              </div>
+            </div>
           </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div>
+          <a class="brand brand-footer" href="index.html">
+            <span class="brand-mark"></span>
+            <span class="brand-text">NovaBuild</span>
+          </a>
+          <p>Contact direct: bogdan.vlad.023@gmail.com</p>
         </div>
-      </section>
-    </main>
-    <div data-footer></div>
-    <script src="app.js"></script>
+        <div class="footer-links">
+          <a href="index.html">Accueil</a>
+          <a href="solutions.html">Solutions</a>
+          <a href="services.html">Services</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="assets/js/main.js"></script>
   </body>
-  </html>
+</html>
