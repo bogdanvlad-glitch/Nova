@@ -1,263 +1,146 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Les services de Nova: agents IA, sites web, logos, community management et systèmes de marque complets."
+      content="NovaBuild propose des services web, IA, branding et visibilité pour les entreprises qui veulent une présence forte et utile."
     />
-    <link rel="icon" type="image/svg+xml" href="public/favicon.svg" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Services | Nova</title>
+    <title>NovaBuild | Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body data-page="services">
-    <div data-header></div>
-    <main>
-      <section class="services-hero">
-        <div class="container services-hero-grid">
-          <div class="services-hero-copy" data-reveal>
-            <div class="eyebrow eyebrow-warm">Expertises Nova</div>
-            <h1>Des services pensés comme un système de présence, pas comme une liste.</h1>
-            <p>
-              Chaque offre est conçue pour renforcer la suivante: identité,
-              site, contenus, agents IA. Le résultat attendu n’est pas juste
-              plus beau. Il doit rendre la marque plus crédible, plus nette et
-              plus rapide à opérer.
-            </p>
-            <div class="hero-actions">
-              <a class="button button-light" href="contact.html">Cadrer mon offre</a>
-              <a class="text-link text-link-light" href="realisations.html">Voir des directions créatives</a>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="index.html" aria-label="NovaBuild accueil">
+          <span class="brand-mark"></span>
+          <span class="brand-text">NovaBuild</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Ouvrir le menu">
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav">
+          <a href="index.html">Accueil</a>
+          <a href="solutions.html">Solutions</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero hero-subpage">
+          <div class="hero-grid compact-grid">
+            <div class="hero-copy reveal">
+              <p class="eyebrow">Services NovaBuild</p>
+              <h1>Un studio capable de livrer le design, le code et le système derrière.</h1>
+              <p class="hero-text">
+                Pas seulement des maquettes. Pas seulement de la technique.
+                NovaBuild assemble l’ensemble du dispositif.
+              </p>
             </div>
           </div>
+        </section>
 
-          <div class="services-hero-board" data-reveal>
-            <div class="board-topline">Attract • Convince • Operate</div>
-            <div class="board-grid">
-              <article>
-                <span>Signal</span>
-                <strong>Logo & identité</strong>
-                <p>Le socle visuel qui donne immédiatement du niveau.</p>
-              </article>
-              <article>
-                <span>Surface</span>
-                <strong>Sites web premium</strong>
-                <p>Des pages qui tiennent la route commercialement et visuellement.</p>
-              </article>
-              <article>
-                <span>Cadence</span>
-                <strong>Community management</strong>
-                <p>Des contenus et des formats qui gardent la marque vivante.</p>
-              </article>
-              <article>
-                <span>Machine</span>
-                <strong>Agents IA</strong>
-                <p>Des automatisations utiles, connectées au business réel.</p>
-              </article>
+        <section class="section service-list">
+          <div class="service-row reveal">
+            <div class="service-number">01</div>
+            <div class="service-copy">
+              <h2>Conception de sites web</h2>
+              <p>Sites vitrines, pages de lancement, expériences multi-pages, responsive, rapides et prêtes à être déployées.</p>
+            </div>
+            <div class="service-meta">Architecture, design système, intégration, animation, SEO</div>
+          </div>
+          <div class="service-row reveal reveal-delay-1">
+            <div class="service-number">02</div>
+            <div class="service-copy">
+              <h2>Agents IA et automatisations</h2>
+              <p>Qualification des demandes, assistants métier, synthèse de contexte, automatisations de suivi et workflows sur mesure.</p>
+            </div>
+            <div class="service-meta">Prompting, orchestration, logique métier, interface, contexte</div>
+          </div>
+          <div class="service-row reveal reveal-delay-2">
+            <div class="service-number">03</div>
+            <div class="service-copy">
+              <h2>Logo et identité visuelle</h2>
+              <p>Direction artistique, logos, palette, ton visuel et fondations prêtes à vivre sur le site et les supports commerciaux.</p>
+            </div>
+            <div class="service-meta">Naming visuel, guidelines, composants, cohérence de marque</div>
+          </div>
+          <div class="service-row reveal reveal-delay-3">
+            <div class="service-number">04</div>
+            <div class="service-copy">
+              <h2>Visibilité et croissance</h2>
+              <p>Clarté de l’offre, pages bien structurées, contenu, SEO, analytics et optimisations orientées conversion.</p>
+            </div>
+            <div class="service-meta">Positionnement, tunnel, métriques, amplification digitale</div>
+          </div>
+        </section>
+
+        <section class="section section-dark">
+          <div class="section-intro reveal">
+            <p class="eyebrow">Méthode</p>
+            <h2>Une cadence simple, lisible et assez robuste pour aller jusqu’à la mise en ligne.</h2>
+          </div>
+          <div class="process-grid">
+            <article class="process-card reveal">
+              <span>Semaine 1</span>
+              <h3>Diagnostic et cadrage</h3>
+              <p>Comprendre l’offre, le marché, les messages, les pages et les priorités business.</p>
+            </article>
+            <article class="process-card reveal reveal-delay-1">
+              <span>Semaine 2</span>
+              <h3>Direction visuelle</h3>
+              <p>Choix du rythme, de la hiérarchie, des médias, de l’interface et des animations utiles.</p>
+            </article>
+            <article class="process-card reveal reveal-delay-2">
+              <span>Semaine 3</span>
+              <h3>Production technique</h3>
+              <p>HTML, CSS, JavaScript, composants, formulaires, intégrations et raffinements.</p>
+            </article>
+            <article class="process-card reveal reveal-delay-3">
+              <span>Semaine 4</span>
+              <h3>Lancement</h3>
+              <p>Contrôle qualité, publication, instrumentation et premiers ajustements post-mise en ligne.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section-cta">
+          <div class="cta-panel reveal">
+            <p class="eyebrow">Exécution complète</p>
+            <h2>NovaBuild peut prendre en charge une page unique, un site complet ou un dispositif plus large autour de votre marque.</h2>
+            <div class="cta-actions">
+              <a class="button button-primary" href="contact.html">Demander un échange</a>
+              <a class="button button-secondary" href="solutions.html">Revenir aux scénarios</a>
             </div>
           </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div>
+          <a class="brand brand-footer" href="index.html">
+            <span class="brand-mark"></span>
+            <span class="brand-text">NovaBuild</span>
+          </a>
+          <p>Studio web & IA orienté résultat.</p>
         </div>
-      </section>
-
-      <section class="service-belt">
-        <div class="service-belt-track">
-          <span>Agents IA</span>
-          <span>Sites de vente</span>
-          <span>Brand systems</span>
-          <span>Social media</span>
-          <span>Landing pages</span>
-          <span>Design direction</span>
-          <span>Automations</span>
-          <span>Logo & favicon</span>
+        <div class="footer-links">
+          <a href="index.html">Accueil</a>
+          <a href="solutions.html">Solutions</a>
+          <a href="contact.html">Contact</a>
         </div>
-      </section>
+      </footer>
+    </div>
 
-      <section class="section section-light">
-        <div class="container service-spectrum">
-          <article class="spectrum-block" data-reveal>
-            <span>Attirer</span>
-            <h2>Une image qui accroche tout de suite.</h2>
-            <p>Le travail de marque doit augmenter la désirabilité et clarifier la valeur en quelques secondes.</p>
-          </article>
-          <article class="spectrum-block" data-reveal>
-            <span>Convaincre</span>
-            <h2>Un site qui porte vraiment l’offre.</h2>
-            <p>Pas une vitrine vide. Une structure de pages pensée pour cadrer, rassurer et convertir.</p>
-          </article>
-          <article class="spectrum-block" data-reveal>
-            <span>Opérer</span>
-            <h2>Des systèmes qui allègent l’exécution.</h2>
-            <p>Contenus, automatisations et agents viennent prolonger la marque dans l’usage quotidien.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section service-architecture">
-        <div class="container architecture-list">
-          <article class="architecture-row" data-reveal>
-            <div class="architecture-index">01</div>
-            <div class="architecture-main">
-              <span>Agents IA</span>
-              <h2>Des agents qui font gagner du temps au lieu de faire joli.</h2>
-              <p>
-                Qualification, support, organisation interne, réponses
-                guidées, pré-cadrage commercial: l’objectif est de décharger les
-                zones qui ralentissent la croissance ou la relation client.
-              </p>
-            </div>
-            <div class="architecture-side">
-              <strong>Livrables</strong>
-              <ul>
-                <li>Cas d’usage prioritaires</li>
-                <li>Scénarios et logique métier</li>
-                <li>Préparation à l’intégration</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="architecture-row" data-reveal>
-            <div class="architecture-index">02</div>
-            <div class="architecture-main">
-              <span>Sites web premium</span>
-              <h2>Des pages amples, lisibles, tendues, avec un vrai niveau d’intention.</h2>
-              <p>
-                Architecture, hiérarchie, rythme, preuves, CTA: le site doit
-                ressembler à une marque solide avant même qu’un commercial
-                parle.
-              </p>
-            </div>
-            <div class="architecture-side">
-              <strong>Livrables</strong>
-              <ul>
-                <li>Structure multi-pages</li>
-                <li>Direction artistique responsive</li>
-                <li>Build propre et déployable</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="architecture-row" data-reveal>
-            <div class="architecture-index">03</div>
-            <div class="architecture-main">
-              <span>Logo & identité</span>
-              <h2>Un système visuel cohérent, pas juste un symbole isolé.</h2>
-              <p>
-                Le logo, la palette, le contraste, la typo et les usages doivent
-                fonctionner ensemble sur le site, les réseaux et les futurs
-                supports.
-              </p>
-            </div>
-            <div class="architecture-side">
-              <strong>Livrables</strong>
-              <ul>
-                <li>Logo principal et version compacte</li>
-                <li>Favicon et règles d’usage</li>
-                <li>Base visuelle réutilisable</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="architecture-row" data-reveal>
-            <div class="architecture-index">04</div>
-            <div class="architecture-main">
-              <span>Community management</span>
-              <h2>Une présence sociale qui ressemble à une marque pilotée, pas à du remplissage.</h2>
-              <p>
-                On structure les angles, les formats et la cadence pour que les
-                réseaux prolongent la perception premium du site.
-              </p>
-            </div>
-            <div class="architecture-side">
-              <strong>Livrables</strong>
-              <ul>
-                <li>Piliers éditoriaux</li>
-                <li>Templates visuels</li>
-                <li>Rythme de publication</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="architecture-row" data-reveal>
-            <div class="architecture-index">05</div>
-            <div class="architecture-main">
-              <span>Landing pages de vente</span>
-              <h2>Des pages d’acquisition pour tester, lancer et convertir plus vite.</h2>
-              <p>
-                Idéal quand il faut soutenir une offre, une campagne, une
-                collecte de leads ou un lancement sans refaire tout le site.
-              </p>
-            </div>
-            <div class="architecture-side">
-              <strong>Livrables</strong>
-              <ul>
-                <li>Promesse et preuves</li>
-                <li>Bloc de conversion mobile-first</li>
-                <li>Structure adaptable</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="architecture-row" data-reveal>
-            <div class="architecture-index">06</div>
-            <div class="architecture-main">
-              <span>Système complet</span>
-              <h2>La formule la plus forte: quand image, site, contenus et ops avancent ensemble.</h2>
-              <p>
-                C’est l’option la plus cohérente si la marque doit passer un cap
-                net et arrêter d’empiler des éléments qui vivent chacun dans leur coin.
-              </p>
-            </div>
-            <div class="architecture-side">
-              <strong>Livrables</strong>
-              <ul>
-                <li>Positionnement transversal</li>
-                <li>Assets multi-canaux</li>
-                <li>Logique orientée impact</li>
-              </ul>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section section-dark">
-        <div class="container models-grid">
-          <article class="model-card" data-reveal>
-            <span>Sprint</span>
-            <h3>Pour lancer vite</h3>
-            <p>Une offre, une page, une identité plus nette, un point d’entrée commercial plus propre.</p>
-          </article>
-          <article class="model-card" data-reveal>
-            <span>Studio</span>
-            <h3>Pour structurer la marque</h3>
-            <p>Site complet, langage visuel, contenus et base de communication cohérents.</p>
-          </article>
-          <article class="model-card" data-reveal>
-            <span>System</span>
-            <h3>Pour opérer avec plus de levier</h3>
-            <p>Branding, web, cadence de contenu et agents IA pensés comme une seule mécanique.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="contact-cta contact-cta-strong">
-        <div class="container contact-cta-grid">
-          <div data-reveal>
-            <div class="eyebrow">Prêt à assembler le tout</div>
-            <h2>La bonne question n’est plus “quel service ?”, mais “quel système faut-il poser en premier ?”</h2>
-          </div>
-          <div class="contact-panel" data-reveal>
-            <p>
-              Si l’offre doit paraître plus sérieuse, plus premium et plus fluide
-              à opérer, on peut cadrer la bonne première traction ensemble.
-            </p>
-            <div class="inline-actions">
-              <a class="button button-dark" href="contact.html">Recevoir une proposition</a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <div data-footer></div>
-    <script src="app.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
-  </html>
+</html>
